@@ -1,0 +1,37 @@
+report_type: weekly
+language: zh-CN
+audience: manager
+style: concise_professional
+length: medium
+week_start_day: 0
+week_end_day: 4
+focus:
+- progress
+- deliverables
+- risks
+- next_week_plan
+output_versions:
+- standard
+- short
+- detailed
+- retro
+privacy:
+  enabled: true
+  preview_before_send: true
+  masking_strategy: role_preserving
+  forbidden_terms: []
+  custom_sensitive_terms:
+  - 小明
+  - 小红
+  - 某公司
+  - 某产品
+  - 某项目
+  mask_emails: true
+  mask_phone_numbers: true
+  mask_urls: true
+  mask_amounts: true
+llm:
+  provider: deepseek
+  model: deepseek-v4-flash
+  base_url: https://api.deepseek.com
+  active_key_name: default
