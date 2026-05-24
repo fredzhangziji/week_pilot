@@ -61,7 +61,7 @@ privacy:
   mask_amounts: true
 llm:
   provider: openai
-  model: gpt-5.1-mini
+  model: gpt-5.5
   base_url: https://api.openai.com/v1
   active_key_name:
 """

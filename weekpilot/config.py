@@ -35,7 +35,7 @@ DEFAULT_STYLE: dict[str, Any] = {
     },
     'llm': {
         'provider': 'openai',
-        'model': 'gpt-5.1-mini',
+        'model': 'gpt-5.5',
         'base_url': 'https://api.openai.com/v1',
         'active_key_name': None,
     },
@@ -154,7 +154,7 @@ def active_api_key(root: str | Path, style: ReportConfig | None = None) -> ApiKe
             name='env:OPENAI_API_KEY',
             provider=os.getenv('OPENAI_PROVIDER', 'openai'),
             api_key=openai_key,
-            model=os.getenv('OPENAI_MODEL') or (style.llm.model if style else 'gpt-5.1-mini'),
+            model=os.getenv('OPENAI_MODEL') or (style.llm.model if style else 'gpt-5.5'),
             base_url=os.getenv('OPENAI_BASE_URL') or (style.llm.base_url if style else 'https://api.openai.com/v1'),
             is_active=True,
         )

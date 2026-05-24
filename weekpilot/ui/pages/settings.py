@@ -11,7 +11,7 @@ from weekpilot.models import ApiKeyEntry, ApiKeyStore, ReportConfig
 from weekpilot.ui import adapters, components, state
 
 PROVIDER_DEFAULTS = {
-    'openai': {'model': 'gpt-5.1-mini', 'base_url': 'https://api.openai.com/v1'},
+    'openai': {'model': 'gpt-5.5', 'base_url': 'https://api.openai.com/v1'},
     'deepseek': {'model': 'deepseek-v4-flash', 'base_url': 'https://api.deepseek.com'},
     'openai-compatible': {'model': 'custom-model', 'base_url': 'http://localhost:8000/v1'},
 }

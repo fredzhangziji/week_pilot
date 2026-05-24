@@ -26,7 +26,7 @@ class LLMSettings(BaseModel):
     """Model settings stored in style.yaml and settings UI."""
 
     provider: str = 'openai'
-    model: str = 'gpt-5.1-mini'
+    model: str = 'gpt-5.5'
     base_url: str = 'https://api.openai.com/v1'
     active_key_name: str | None = None
 
@@ -92,7 +92,7 @@ class ApiKeyEntry(BaseModel):
     name: str
     provider: str = 'openai'
     api_key: str
-    model: str = 'gpt-5.1-mini'
+    model: str = 'gpt-5.5'
     base_url: str = 'https://api.openai.com/v1'
     is_active: bool = True
 

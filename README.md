@@ -61,7 +61,7 @@ pip install -r requirements.txt
 
 ```bash
 OPENAI_API_KEY=your_api_key
-OPENAI_MODEL=gpt-5.1-mini
+OPENAI_MODEL=gpt-5.5
 OPENAI_BASE_URL=https://api.openai.com/v1
 ```
 
